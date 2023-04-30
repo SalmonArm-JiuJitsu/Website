@@ -12,7 +12,7 @@
 		$header = $('#header'),
 		$banner = $('#banner');
 
-	// Breakpoints.
+	// Breakpoints. 
 		breakpoints({
 			xlarge:    ['1281px',   '1680px'   ],
 			large:     ['981px',    '1280px'   ],
@@ -121,7 +121,7 @@
 
 		$tiles.each(function() {
 
-			var $this = $(this),
+			var	$this = $(this),
 				$image = $this.find('.image'), $img = $image.find('img'),
 				$link = $this.find('.link'),
 				x;
@@ -160,7 +160,8 @@
 							if ($link.attr('target') == '_blank') {
 
 								// Open in new tab.
-									window.open(href);
+									//window.open(href);
+									window.scrollTo(href);
 
 							}
 
@@ -168,8 +169,8 @@
 							else {
 
 								// Start transitioning.
-									$this.addClass('is-transitioning');
-									$wrapper.addClass('is-transitioning');
+								/*	$this.addClass('is-transitioning');
+									$wrapper.addClass('is-transitioning');*/
 
 								// Redirect.
 									window.setTimeout(function() {
