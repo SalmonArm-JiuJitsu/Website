@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 
-html, body, div, span, applet, object,
+html {
+	scroll-behavior: smooth;
+}, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -2832,13 +2834,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-image: url("../../images/smoke.jpg");
-				background-size:     cover;                     
-				background-repeat:   no-repeat;
+				background-color: #c55e2f;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #b0d5df;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -2846,11 +2846,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #6d793a;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+				background-color: #404044;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3511,6 +3511,30 @@ input, select, textarea {
 
 		#banner.style6:after {
 			background-color: #87c5a4;
+		}
+
+		#banner.style7:after {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			background-image: url("../../images/p.gif");
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			padding: 6em 0 2em 0 ;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-bottom: 0 !important;
+			cursor: default;
+			height: 110vh;
+			margin-bottom: -3.25em;
+			max-height: 32em;
+			min-height: 22em;
+			top: -3.25em;
 		}
 
 		body.is-preload #banner:after {
