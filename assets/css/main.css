@@ -3513,7 +3513,7 @@ input, select, textarea {
 			background-color: #87c5a4;
 		}
 
-		#banner.style7:after {
+		#banner.style7 {
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
@@ -3530,12 +3530,35 @@ input, select, textarea {
 			background-size: cover;
 			border-bottom: 0 !important;
 			cursor: default;
-			height: 110vh;
+			height: 60vh;
 			margin-bottom: -3.25em;
-			max-height: 32em;
-			min-height: 22em;
+			max-height: 45em;
+			min-height: 40em;
+			position: relative;
 			top: -3.25em;
 		}
+	
+			#banner.style7:after {
+				-moz-transition: opacity 2.5s ease;
+				-webkit-transition: opacity 2.5s ease;
+				-ms-transition: opacity 2.5s ease;
+				transition: opacity 2.5s ease;
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+				pointer-events: none;
+				background-color: #242943;
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0.85;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
 
 		body.is-preload #banner:after {
 			opacity: 1.0;
