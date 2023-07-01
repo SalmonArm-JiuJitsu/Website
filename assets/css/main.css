@@ -1782,7 +1782,7 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #000000;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1828,7 +1828,7 @@ input, select, textarea {
 
 			header.minor > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #000000;
 				display: block;
 				height: 2px;
 				margin: 0.1em 0 0 0;
@@ -1949,7 +1949,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.25);
+		background: rgba(212, 212, 255, 0.035);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -2116,8 +2116,8 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		border: solid 1px rgba(212, 212, 255, 0.4);
-		background-color: rgba(212, 212, 255, 0.4);
+		border: solid 1px rgba(212, 212, 255, 0.2);
+		background-color: rgba(212, 212, 255, 0.035);
 		margin-bottom: 2em;
 		padding: 2.5em;
 	}
@@ -2172,9 +2172,9 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: #000000;
 			border-radius: 100%;
-			color: #242943;
+			color: #ffffff;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
@@ -2492,13 +2492,17 @@ input, select, textarea {
 		}
 
 		table tbody tr {
-			border: solid 1px rgba(212, 212, 255, 0.1);
+			border: solid 0px rgba(212, 212, 255, 0.1);
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(212, 212, 255, 0.5);
+				background-color: rgba(212, 212, 255, 0.035);
+			}
+
+			table tbody tr:last-child {
+				border-bottom: solid 1px rgba(212, 212, 255, 0.035);
 			}
 
 		table td {
@@ -2577,7 +2581,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
+		box-shadow: inset 0 0 0 2px #000000;
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -2732,9 +2736,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #000000;
 			box-shadow: none;
-			color: #242943;
+			color: #ffffff;
 		}
 
 			input[type="submit"].primary:hover, input[type="submit"].primary:active,
