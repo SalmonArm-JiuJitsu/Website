@@ -3214,7 +3214,7 @@ input, select, textarea {
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 1em 1em 0 1.25em;
 		}
 
 			#header .logo strong {
@@ -3335,30 +3335,6 @@ input, select, textarea {
 			box-shadow: none;
 			position: absolute;
 		}
-
-			#header.alt.style1 .logo strong {
-				color: #6fc3df;
-			}
-
-			#header.alt.style2 .logo strong {
-				color: #8d82c4;
-			}
-
-			#header.alt.style3 .logo strong {
-				color: #ec8d81;
-			}
-
-			#header.alt.style4 .logo strong {
-				color: #e7b788;
-			}
-
-			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
-			}
-
-			#header.alt.style6 .logo strong {
-				color: #87c5a4;
-			}
 
 		body.is-preload #header.alt {
 			opacity: 0;
@@ -3827,7 +3803,6 @@ input, select, textarea {
 		background-color: transparent;
 		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 	}
-
 
 /* Contact */
 
