@@ -3321,6 +3321,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
+			#header .logo {
+				padding: 0.8% 0 0.15% 0;
+			}
+
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
 			}
@@ -3332,6 +3336,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			#header .logo {
+				padding: 1.5% 0 0.25% 0;
+			}
 
 			#header nav a[href="#menu"] {
 				padding-right: 4em !important;
@@ -3350,9 +3358,9 @@ input, select, textarea {
 				line-height: 2.75em;
 			}
 
-				/*#header .logo {
-					padding: 0 1em;
-				}*/
+				#header .logo {
+					padding: 2.25% 0 0.5% 0;
+				}
 
 				#header nav a {
 					padding: 0 0.5em;
@@ -3382,6 +3390,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			#header .logo {
+				padding: 2.5% 0 0.75% 0;
+			}
+			
 			#header .logo span {
 				display: none;
 			}
