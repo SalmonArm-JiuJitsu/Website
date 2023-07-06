@@ -3210,12 +3210,33 @@ input, select, textarea {
 
 		#header .logo {
 			border: 0;
-			display:inherit;
+			display: inline-block;
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 1.5% 0 0 0.5%;
+			padding: 0 1.5em;
 		}
+
+			#header .logo strong {
+				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				background-color: #ffffff;
+				color: #242943;
+				display: inline-block;
+				line-height: 1.65em;
+				margin-right: 0.325em;
+				padding: 0 0.125em 0 0.375em;
+			}
+
+			#header .logo:hover strong {
+				background-color: #9bf1ff;
+			}
+
+			#header .logo:active strong {
+				background-color: #53e3fb;
+			}
 
 		#header nav {
 			display: -moz-flex;
@@ -3321,10 +3342,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			#header .logo {
-				padding: 0.8% 0 0.15% 0;
-			}
-
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
 			}
@@ -3336,10 +3353,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
-			#header .logo {
-				padding: 1.5% 0 0.25% 0;
-			}
 
 			#header nav a[href="#menu"] {
 				padding-right: 4em !important;
@@ -3359,7 +3372,7 @@ input, select, textarea {
 			}
 
 				#header .logo {
-					padding: 2.25% 0 0.5% 0;
+					padding: 0 1em;
 				}
 
 				#header nav a {
@@ -3390,10 +3403,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#header .logo {
-				padding: 2.5% 0 0.75% 0;
-			}
-			
 			#header .logo span {
 				display: none;
 			}
