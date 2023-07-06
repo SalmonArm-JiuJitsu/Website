@@ -3217,26 +3217,14 @@ input, select, textarea {
 			padding: 0 1.5em;
 		}
 
-			#header .logo strong {
-				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
-			}
-
-			#header .logo:hover strong {
-				background-color: #9bf1ff;
-			}
-
-			#header .logo:active strong {
-				background-color: #53e3fb;
-			}
+		#header .logoPic {
+			border: 0;
+			display: inherit;
+			font-size: 0.8em;
+			height: inherit;
+			line-height: inherit;
+			padding: 0.75% 0 0 0.15%;
+		}
 
 		#header nav {
 			display: -moz-flex;
@@ -3342,6 +3330,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
+			#header .logoPic {
+				padding: 1% 0 0 0.1%;
+			}
+
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
 			}
@@ -3353,6 +3345,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			#header .logoPic {
+				padding: 1.4% 0 0 0.2%;
+			}
 
 			#header nav a[href="#menu"] {
 				padding-right: 4em !important;
@@ -3374,6 +3370,11 @@ input, select, textarea {
 				#header .logo {
 					padding: 0 1em;
 				}
+				
+				#header .logoPic {
+					padding: 1.75% 0 0 0.25%;
+				}
+
 
 				#header nav a {
 					padding: 0 0.5em;
@@ -3405,6 +3406,10 @@ input, select, textarea {
 
 			#header .logo span {
 				display: none;
+			}
+
+			#header .logoPic {
+				padding: 2.5% 0 0 0.75%;
 			}
 
 			#header nav a[href="#menu"] {
