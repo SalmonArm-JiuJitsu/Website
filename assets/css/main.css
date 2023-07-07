@@ -3223,7 +3223,7 @@ input, select, textarea {
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0.5% 0 0.5% 0.25%;
+			padding: 0.5% 0 0.5% 0.5%;
 		}
 
 		#header nav {
@@ -3331,7 +3331,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#header .logoPic {
-				padding: 0.5% 0 0.5% 0.5%;
+				padding: 0.5% 0 0.5% 0.75%;
 			}
 
 			#header nav a[href="#menu"] {
@@ -3347,7 +3347,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header .logoPic {
-				padding: 0.75% 0 0.75% 0.5%;
+				padding: 0.75% 0 0.75% 0.75%;
 			}
 
 			#header nav a[href="#menu"] {
@@ -3372,7 +3372,7 @@ input, select, textarea {
 				}
 				
 				#header .logoPic {
-					padding: 0.75% 0 0.75% 0.75%;
+					padding: 0.75% 0 0.75% 1.25%;
 				}
 
 
@@ -3409,7 +3409,7 @@ input, select, textarea {
 			}
 
 			#header .logoPic {
-				padding: 1% 0 1% 0.75%;
+				padding: 1.5% 0 1.5% 1.25%;
 			}
 
 			#header nav a[href="#menu"] {
