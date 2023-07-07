@@ -1767,7 +1767,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	header.major {
+	major {
 		width: -moz-max-content;
 		width: -webkit-max-content;
 		width: -ms-max-content;
@@ -1777,7 +1777,7 @@ input, select, textarea {
 
 		header.major > :first-child {
 			margin-bottom: 0;
-			width: calc(100% + 0.5em);
+			width: calc(100% + 0.5em);header.
 		}
 
 			header.major > :first-child:after {
@@ -1812,6 +1812,44 @@ input, select, textarea {
 		}
 
 	}
+
+	header.majorAlt > :first-child {
+		margin-bottom: 0;
+		width: calc(100% + 0.5em);header.
+	}
+
+		header.majorAlt > :first-child:after {
+			content: '';
+			background-color: #000000;
+			display: block;
+			height: 2px;
+			margin: 0.325em 0 0.5em 0;
+			width: 100%;
+		}
+
+	header.majorAlt > p {
+		font-size: 0.7em;
+		font-weight: 600;
+		letter-spacing: 0.25em;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	body.is-ie header.majorAlt > :first-child:after {
+		max-width: 9em;
+	}
+
+	body.is-ie header.majorAlt > h1:after {
+		max-width: 100% !important;
+	}
+
+@media screen and (max-width: 736px) {
+
+	header.majorAlt > p br {
+		display: none;
+	}
+
+}
 
 	header.minor {
 		width: -moz-max-content;
