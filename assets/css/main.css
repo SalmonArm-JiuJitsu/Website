@@ -3234,6 +3234,7 @@ input, select, textarea {
 	}
 
 	#header {
+		-moz-osx-font-smoothing: antialiased;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
