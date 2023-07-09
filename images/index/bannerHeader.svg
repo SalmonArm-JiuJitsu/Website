@@ -3,11 +3,11 @@
 
 <svg
    xml:space="preserve"
-   width="4195"
+   width="4250"
    height="509"
    version="1.1"
    style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-   viewBox="0 0 4195 509"
+   viewBox="0 0 4250 509"
    id="svg498"
    sodipodi:docname="bannerHeader.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -646,7 +646,34 @@
    x2="2536.8555"
    y2="693.15601"
    gradientUnits="userSpaceOnUse"
-   gradientTransform="translate(1556.9982,-439.56738)" /></defs>
+   gradientTransform="translate(1556.9982,-439.56738)" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id13"
+   id="linearGradient1781"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(-603.00177,-686.74529)"
+   x1="1059.5918"
+   y1="950.65265"
+   x2="2093.1587"
+   y2="941.2453" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id13"
+   id="linearGradient1783"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(667.66258,-503.83899)"
+   x1="1387.8071"
+   y1="796.0733"
+   x2="1777.5464"
+   y2="796.0733" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id13"
+   id="linearGradient1785"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(1556.9982,-439.56738)"
+   x1="1083.2107"
+   y1="693.15601"
+   x2="2536.8555"
+   y2="693.15601" /></defs>
  <g
    inkscape:groupmode="layer"
    id="layer5"
@@ -794,7 +821,7 @@
    id="layer4"
    inkscape:label="Text"><text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;fill:url(#linearGradient1873);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;fill:url(#linearGradient1781);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
      x="440.67853"
      y="386.20563"
      id="text1311"
@@ -803,9 +830,9 @@
        id="tspan1309"
        x="440.67853"
        y="386.20563"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1873);fill-opacity:1">almon</tspan></text><text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1781);fill-opacity:1">almon</tspan></text><text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;opacity:0.768922;fill:url(#linearGradient3283);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;opacity:0.768922;fill:url(#linearGradient1783);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
      x="2027.3969"
      y="391.4921"
      id="text3275"
@@ -814,9 +841,9 @@
        id="tspan3273"
        x="2027.3969"
        y="391.4921"
-       style="fill:url(#linearGradient3283);fill-opacity:1">rm</tspan></text><text
+       style="fill:url(#linearGradient1783);fill-opacity:1">rm</tspan></text><text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;opacity:0.768922;fill:url(#linearGradient4298);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:373.333px;font-family:'Helvetica Light';-inkscape-font-specification:'Helvetica Light, Normal';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:15px;opacity:0.768922;fill:url(#linearGradient1785);fill-opacity:1;fill-rule:evenodd;stroke-width:0"
      x="2632.0059"
      y="384.38272"
      id="text4290"
@@ -825,4 +852,4 @@
        id="tspan4288"
        x="2632.0059"
        y="384.38272"
-       style="fill:url(#linearGradient4298);fill-opacity:1">Jiu-Jitsu</tspan></text></g></svg>
+       style="fill:url(#linearGradient1785);fill-opacity:1">Jiu-Jitsu</tspan></text></g></svg>
