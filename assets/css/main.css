@@ -235,13 +235,6 @@ input, select, textarea {
 		font-size: 0.7em;
 	}
 
-	h6.alt {
-		font-size: 1.2em;
-		padding-top: 10%;
-		line-height: 1.5;
-		margin: 0 0 0 0;
-	}
-
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -341,18 +334,6 @@ input, select, textarea {
 		-moz-text-fill-color: transparent;
 		font-size: 120%;
 		line-height: 220%;
-	}
-
-	.large-text-1 {
-		font-size: 300%;
-		line-height: 130%;
-	}
-
-	.large-text-2 {
-		font-size: 215%;
-		font-weight: 0;
-		line-height: 150%;
-		letter-spacing: 1px;
 	}
 
 	.upper {
@@ -2847,7 +2828,7 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
-			
+
 
 /* Button */
 
@@ -3354,37 +3335,38 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-image: url("../../images/index/tiles/cyanTile1.png");
+				background-image: linear-gradient(45deg, #0ff0ff, #0000ff);
+				background: -webkit-gradient(linear, );
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-image: url("../../images/index/tiles/chromeTile1.png");
+				background-image: linear-gradient(45deg, #282828, #969696 29%, #dcdcdc 69%, #5a5a5a);
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-image: url("../../images/index/tiles/blackTile.png");
+				background-image: linear-gradient(45deg, #141414 0%, #1e1e1e 25%, #323232 50%, #646464 80%, #464646 100%);
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-image: url("../../images/index/tiles/orangeTile2.png");
+				background-image: linear-gradient(45deg, #fa7a1e 0%, #f36a1c 25%, #cc3d1d 93%);
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-image: url("../../images/index/tiles/cyanTile2.png");
+				background-image: linear-gradient(45deg, #0000ff, #0ff0ff);
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-image: url("../../images/index/tiles/chromeTile1.png");
+				background-image: linear-gradient(45deg, #282828, #969696 29%, #dcdcdc 69%, #5a5a5a);
 				background-size:     cover;                     
 				background-repeat:   no-repeat;
 			}
@@ -4061,7 +4043,7 @@ input, select, textarea {
 			-webkit-align-items: center;
 			-ms-align-items: center;
 			align-items: center;
-			background-image: url("../../images/gallery/galleryBanner.png");
+			background-image: linear-gradient(90deg #0000b9, #0000ff, #ffffff);
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -4257,41 +4239,6 @@ input, select, textarea {
 			background-color: transparent;
 			border-bottom: solid 1px rgba(212, 212, 255, 0.05);
 		}
-
-/* loprofile */
-
-#loprofile {
-	background-color: #2a2f4a;
-}
-
-	#loprofile > * {
-		border-top: solid 1px rgba(212, 212, 255, 0.1);
-	}
-
-		#loprofile > *:first-child {
-			border-top: 0;
-		}
-
-		#loprofile > * > .inner {
-			padding: 1.5em 0 2em 0 ;
-			margin: 0 auto;
-			max-width: 65em;
-			width: calc(100% - 6em);
-		}
-
-			@media screen and (max-width: 736px) {
-
-				#loprofile > * > .inner {
-					padding: 3em 0 1em 0 ;
-					width: calc(100% - 3em);
-				}
-
-			}
-
-	#loprofile.alt {
-		background-color: transparent;
-		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
-	}
 
 /* Contact */
 
