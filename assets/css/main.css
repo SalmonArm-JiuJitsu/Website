@@ -1838,6 +1838,28 @@ input, select, textarea {
 
 	}
 
+	majorAlt {
+		width: -moz-max-content;
+		width: -webkit-max-content;
+		width: -ms-max-content;
+		width: max-content;
+		margin-bottom: 2em;
+	}
+
+	header.majorAlt > :first-child {
+		margin-bottom: 0;
+		width: calc(100% + 0.5em);
+	}
+
+		header.majorAlt > :first-child:after {
+			content: '';
+			background-color: #000000;
+			display: block;
+			height: 2px;
+			margin: 0.1em 0 0.5em 0;
+			width: 100%;
+		}
+
 	header.minor {
 		width: -moz-max-content;
 		width: -webkit-max-content;
