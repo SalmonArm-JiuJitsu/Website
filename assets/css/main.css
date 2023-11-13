@@ -314,28 +314,6 @@ input, select, textarea {
 		text-align: right;
 	}
 
-	.gradient-text-1 {
-		background-image: linear-gradient(45deg, #f3ec78, #af4261);
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-background-clip: text;
-		-moz-text-fill-color: transparent;
-		font-size: 120%;
-		line-height: 220%;
-	}
-
-	.gradient-text-2 {
-		background-image: linear-gradient(180deg, #f3ec78, #b85027);
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-background-clip: text;
-		-moz-text-fill-color: transparent;
-		font-size: 120%;
-		line-height: 220%;
-	}
-
 	.uppercase {
 		text-transform: uppercase;
 	}
@@ -1824,7 +1802,7 @@ input, select, textarea {
 
 		header.major > :first-child {
 			margin-bottom: 0;
-			width: calc(100% + 0.5em);header.
+			width: calc(100% + 0.5em);
 		}
 
 			header.major > :first-child:after {
@@ -1859,28 +1837,6 @@ input, select, textarea {
 		}
 
 	}
-
-	majorAlt {
-		width: -moz-max-content;
-		width: -webkit-max-content;
-		width: -ms-max-content;
-		width: max-content;
-		margin-bottom: 2em;
-	}
-
-	header.majorAlt > :first-child {
-		margin-bottom: 0;
-		width: calc(100% + 0.5em);header.
-	}
-
-		header.majorAlt > :first-child:after {
-			content: '';
-			background-color: #000000;
-			display: block;
-			height: 2px;
-			margin: 0.1em 0 0.5em 0;
-			width: 100%;
-		}
 
 	header.minor {
 		width: -moz-max-content;
@@ -4064,12 +4020,12 @@ input, select, textarea {
 				z-index: 1;
 			}
 
-		#banner.gallery {
+		#banner.gradient {
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
 			align-items: center;
-			background-image: url("../../images/gallery/galleryBanner.png");
+			background-image: url("../../images/banner/gradientBanner.png");
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -4089,7 +4045,7 @@ input, select, textarea {
 			top: -3.25em;
 		}
 		
-			#banner.gallery:after {
+			#banner.gradient:after {
 				-moz-transition: opacity 0.5s ease;
 				-webkit-transition: opacity 0.5s ease;
 				-ms-transition: opacity 0.5s ease;
