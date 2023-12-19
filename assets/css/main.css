@@ -121,9 +121,18 @@ input, select, textarea {
 
 	@font-face {
 		font-family: "nimbus-sans-light";
-		src: url("../webfonts/nimbus-sans/nimbus-sans-light-webfont.woff2") format("woff2"),
-			url("../webfonts/nimbus-sans/nimbus-sans-light-webfont.woff") format("woff"),
+		src: url("../webfonts/nimbus-sans/nimbus-sans-light.woff2") format("woff2"),
+			url("../webfonts/nimbus-sans/nimbus-sans-light.woff") format("woff"),
 			url("../webfonts/nimbus-sans/nimbus-sans-light.otf") format("opentype");
+		font-weight: 0;
+		
+	}
+
+	@font-face {
+		font-family: "nimbus-sans-bold";
+		src: url("../webfonts/nimbus-sans/nimbus-sans-bold.woff2") format("woff2"),
+			url("../webfonts/nimbus-sans/nimbus-sans-bold.woff") format("woff"),
+			url("../webfonts/nimbus-sans/nimbus-sans-bold.otf") format("opentype");
 		font-weight: 0;
 		
 	}
@@ -196,7 +205,7 @@ input, select, textarea {
 		p.style1 {
 			font-family: "nimbus-sans-light";
 			color: #242943;
-			font-size: 13pt;
+			font-size: 16pt;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2187,11 +2196,11 @@ input, select, textarea {
 			border: 0;
 			text-align: center;
 			margin-bottom: 5%;
-			padding: 2em;
 			padding: 3em 2em 3.5em 2em;
 		}
 
 			.box.style2 h3 {
+				font-size: 20pt;
 				margin-bottom: 0.5em;
 				color: #242943;
 			}
@@ -2213,7 +2222,6 @@ input, select, textarea {
 				color: #242943;
 			}
 	
-	
 	/* Container */
 
 	.container {	
@@ -2225,6 +2233,150 @@ input, select, textarea {
 		background-color: transparent;
 	}
 	
+	/* Grid */
+
+	.grid {
+		place-content: center;
+		display: grid;
+		padding: 3em 0;
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 30% 30% 30%;
+		grid-template-rows: 100%;
+		grid-gap: 1rem;
+		grid-template-areas:
+			"header header header"
+			"content-1 content-2 content-3"
+			"footer footer footer"
+			"content-4 content-5 content-6";
+			
+	  }
+
+			@media screen and (max-width: 980px) {
+				.grid {
+					place-content: center;
+					display: grid;
+					padding: 3em 0;
+					width: 100%;
+					height: 100%;
+					grid-template-columns: 45% 45%;
+					grid-template-rows: 100% 100%;
+					grid-gap: 1rem;
+					grid-template-areas:
+						"header header"
+						"content-1 content-2"
+						"content-3 content-3"
+						"footer footer"
+						"content-4 content-5"
+						"content-6 content-6";
+						
+				}	
+			}
+
+			@media screen and (max-width: 736px) {
+				.grid {
+					place-content: center;
+					display: grid;
+					padding: 3em 0;
+					width: 100%;
+					height: 100%;
+					grid-template-columns: 95%;
+					grid-template-rows: 100%;
+					grid-gap: 1rem;
+					grid-template-areas:
+						"header"
+						"content-1"
+						"content-2"
+						"content-3"
+						"footer"
+						"content-4"
+						"content-5"
+						"content-6";
+						
+				}	
+			}
+	  
+	  .item {
+		padding: 12% 6% 8% 6%;
+		font-size: 20pt;
+		font-family: "nimbus-sans-light";
+		text-align: center;
+		background-image: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);
+		border: 0;
+		justify-content: center;
+		color: #242943;
+		border-radius: 4px;
+		align-items: center;
+		font-weight: bold;
+	  }
+
+		.item h3 {
+			font-size: 20pt;
+			font-family: "nimbus-sans-bold";
+			margin: 0.5em 0;
+			color: #242943;
+		}
+
+	  .header {
+		grid-area: header;
+		justify-content: center;
+		font-family: "nimbus-sans-bold";
+		font-size: 30pt;
+		letter-spacing: 1.5pt;
+		padding: 20px 0;
+		background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
+	  }
+
+			@media screen and (max-width: 480px) {
+				.header {
+					font-size: 26pt;
+					letter-spacing: 0.75pt;
+					padding: 5% 5%;
+				}
+			}
+	  
+	  .content-1 {
+		grid-area: content-1;
+	  }
+	  
+	  .content-2 {
+		grid-area: content-2;
+	  }
+	  
+	  .content-3 {
+		grid-area: content-3;
+	  }
+
+	  .content-4 {
+		grid-area: content-4;
+	  }
+	  
+	  .content-5 {
+		grid-area: content-5;
+	  }
+	  
+	  .content-6 {
+		grid-area: content-6;
+	  }
+	  
+	  .footer {
+		grid-area: footer;
+		justify-content: center;
+		font-family: "nimbus-sans-bold";
+		font-size: 30pt;
+		letter-spacing: 1.5pt;
+		padding: 20px 0;
+		background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
+	  }
+
+			@media screen and (max-width: 480px) {
+				.footer {
+					font-size: 26pt;
+					letter-spacing: 0.75pt;
+					margin-top: 1.5em;
+				}
+			}
 	
 /* Calendar */
 
@@ -2428,6 +2580,19 @@ input, select, textarea {
 	
 
 		.icon.style2:before {
+			background-color: #242943;
+			border-radius: 100%;
+			margin: 0 0 0.6em 0;
+			color: rgb(243, 106, 28);
+			font-size: 140%;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		}
+
+		.icon.style3:before {
 			background-color: #242943;
 			border-radius: 100%;
 			margin: 0 0 0.6em 0;
@@ -3010,6 +3175,7 @@ input, select, textarea {
 			background-color: #242943;
 			box-shadow: none;
 			color: #fff;
+			font-size: 63%;
 		}
 
 			input[type="submit"].style2:hover, input[type="submit"].style2:active,
@@ -3046,6 +3212,11 @@ input, select, textarea {
 			cursor: default;
 			opacity: 0.25;
 		}
+
+			.blur {
+				background: rgba(255, 255, 255, 0.07);
+				backdrop-filter: blur(8px);
+			}
 
 /* Tiles */
 
@@ -4012,8 +4183,9 @@ input, select, textarea {
 			background-size: cover;
 			border-bottom: 0 !important;
 			cursor: default;
-			height: 60vh;
+			height: 100vh;
 			margin-bottom: -3.25em;
+			min-width: 100%;
 			max-height: 45em;
 			min-height: 43em;
 			position: relative;
