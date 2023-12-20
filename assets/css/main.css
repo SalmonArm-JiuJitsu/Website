@@ -137,6 +137,15 @@ input, select, textarea {
 		
 	}
 
+	@font-face {
+		font-family: "nimbus-sans-regular";
+		src: url("../webfonts/nimbus-sans/nimbus-sans-regular.woff2") format("woff2"),
+			url("../webfonts/nimbus-sans/nimbus-sans-regular.woff") format("woff"),
+			url("../webfonts/nimbus-sans/nimbus-sans-regular.otf") format("opentype");
+		font-weight: 0;
+		
+}
+
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2222,161 +2231,290 @@ input, select, textarea {
 				color: #242943;
 			}
 	
-	/* Container */
+/* Container */
 
-	.container {	
-		margin: 0 auto;
-		max-width: calc(100% - 50px);
-		width: 95%;
-		padding: 3em 0 3em 0;
-		text-align: center;
-		background-color: transparent;
+.container {	
+	margin: 0 auto;
+	padding: 3em 0 3em 0;
+	background-color: transparent;
+}
+
+	.container.style1 {
+		margin: 0;
+		padding: 2em 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
 	}
-	
-	/* Grid */
 
-	.grid {
-		place-content: center;
-		display: grid;
-		padding: 3em 0;
-		width: 100%;
-		height: 100%;
-		grid-template-columns: 30% 30% 30%;
-		grid-template-rows: 1fr auto;
-		grid-gap: 1rem;
-		grid-template-areas:
-			"header header header"
-			"content-1 content-2 content-3"
-			"footer footer footer"
-			"content-4 content-5 content-6";
-			
-	  }
+/* Grid */
 
-			@media screen and (max-width: 980px) {
-				.grid {
-					place-content: center;
-					display: grid;
-					padding: 3em 0;
-					width: 100%;
-					height: 100%;
-					grid-template-columns: 45% 45%;
-					grid-template-rows: 1fr auto;
-					grid-gap: 1rem;
-					grid-template-areas:
-						"header header"
-						"content-1 content-2"
-						"content-3 content-3"
-						"footer footer"
-						"content-4 content-5"
-						"content-6 content-6";
-						
-				}	
-			}
+.grid {
+	place-content: center;
+	display: grid;
+	padding: 3em 0;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 1fr auto;
+	grid-gap: 1rem;
+	grid-template-areas:
+		"header header header"
+		"content-1 content-2 content-3"
+		"footer footer footer"
+		"content-4 content-5 content-6";
+		
+  }
 
-			@media screen and (max-width: 736px) {
-				.grid {
-					place-content: center;
-					display: grid;
-					padding: 3em 0;
-					width: 100%;
-					height: 100%;
-					grid-template-columns: 95%;
-					grid-template-rows: 1fr auto;
-					grid-gap: 1rem;
-					grid-template-areas:
-						"header"
-						"content-1"
-						"content-2"
-						"content-3"
-						"footer"
-						"content-4"
-						"content-5"
-						"content-6";
-						
-				}	
-			}
-	  
-	  .item {
-		padding: 12% 6% 8% 6%;
-		font-size: 20pt;
-		font-family: "nimbus-sans-light";
-		text-align: center;
-		background-image: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);
-		border: 0;
-		justify-content: center;
-		color: #242943;
-		border-radius: 4px;
-		align-items: center;
-		font-weight: bold;
-	  }
-
-		.item h3 {
-			font-size: 20pt;
-			font-family: "nimbus-sans-bold";
-			margin: 0.5em 0;
-			color: #242943;
+		@media screen and (max-width: 980px) {
+			.grid {
+				place-content: center;
+				display: grid;
+				padding: 3em 0;
+				width: 100%;
+				height: 100%;
+				grid-template-columns: 45% 45%;
+				grid-template-rows: 1fr auto;
+				grid-gap: 1rem;
+				grid-template-areas:
+					"header header"
+					"content-1 content-2"
+					"content-3 content-3"
+					"footer footer"
+					"content-4 content-5"
+					"content-6 content-6";
+					
+			}	
 		}
 
-	  .header {
-		grid-area: header;
-		justify-content: center;
+		@media screen and (max-width: 736px) {
+			.grid {
+				place-content: center;
+				display: grid;
+				padding: 3em 0;
+				width: 100%;
+				height: 100%;
+				grid-template-columns: 95%;
+				grid-template-rows: 1fr auto;
+				grid-gap: 1rem;
+				grid-template-areas:
+					"header"
+					"content-1"
+					"content-2"
+					"content-3"
+					"footer"
+					"content-4"
+					"content-5"
+					"content-6";
+					
+			}	
+		}
+  
+  .item {
+	padding: 12% 6% 8% 6%;
+	font-size: 20pt;
+	font-family: "nimbus-sans-light";
+	text-align: center;
+	background-image: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);
+	border: 0;
+	justify-content: center;
+	color: #242943;
+	border-radius: 4px;
+	align-items: center;
+	font-weight: bold;
+  }
+
+	.item h3 {
+		font-size: 20pt;
 		font-family: "nimbus-sans-bold";
-		font-size: 30pt;
-		letter-spacing: 1.5pt;
-		padding: 20px 0;
-		background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
-	  }
+		margin: 0.5em 0;
+		color: #242943;
+	}
 
-			@media screen and (max-width: 480px) {
-				.header {
-					font-size: 26pt;
-					letter-spacing: 0.75pt;
-					padding: 5% 5%;
-				}
+  .header {
+	grid-area: header;
+	justify-content: center;
+	font-family: "nimbus-sans-bold";
+	font-size: 30pt;
+	letter-spacing: 1.5pt;
+	padding: 20px 0;
+	background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
+  }
+
+		@media screen and (max-width: 480px) {
+			.header {
+				font-size: 26pt;
+				letter-spacing: 0.75pt;
+				padding: 5% 5%;
 			}
-	  
-	  .content-1 {
-		grid-area: content-1;
-	  }
-	  
-	  .content-2 {
-		grid-area: content-2;
-	  }
-	  
-	  .content-3 {
-		grid-area: content-3;
-	  }
+		}
+  
+  .content-1 {
+	grid-area: content-1;
+  }
+  
+  .content-2 {
+	grid-area: content-2;
+  }
+  
+  .content-3 {
+	grid-area: content-3;
+  }
 
-	  .content-4 {
-		grid-area: content-4;
-	  }
-	  
-	  .content-5 {
-		grid-area: content-5;
-	  }
-	  
-	  .content-6 {
-		grid-area: content-6;
-	  }
-	  
-	  .footer {
-		grid-area: footer;
-		justify-content: center;
-		font-family: "nimbus-sans-bold";
-		font-size: 30pt;
-		letter-spacing: 1.5pt;
-		padding: 20px 0;
-		background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
-	  }
+  .content-4 {
+	grid-area: content-4;
+  }
+  
+  .content-5 {
+	grid-area: content-5;
+  }
+  
+  .content-6 {
+	grid-area: content-6;
+  }
+  
+  .footer {
+	grid-area: footer;
+	justify-content: center;
+	font-family: "nimbus-sans-bold";
+	font-size: 30pt;
+	letter-spacing: 1.5pt;
+	padding: 20px 0;
+	background-image: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
+  }
 
-			@media screen and (max-width: 480px) {
-				.footer {
-					font-size: 26pt;
-					letter-spacing: 0.75pt;
-					margin-top: 1.5em;
-				}
+		@media screen and (max-width: 480px) {
+			.footer {
+				font-size: 26pt;
+				letter-spacing: 0.75pt;
+				margin-top: 1.5em;
 			}
+		}
+
+/* Card */
+
+.column {
+	display: flex;
+	width: 100%;
+	padding: 1.33% 0;
+}
+
+	@media screen and (min-width: 992px) {
+		.column {
+			flex: 33.33% 33.33% 33.33%;
+			max-width: 33.33%;
+			padding: 0 1%;
+		}
+	}
+
+.card {
+	flex-basis: 100%;
+	width: 100%;
+	box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+	padding: 1em 1em;
+	border-radius: 0.5em;
+	transition: 0.3s;
+	background-image: linear-gradient(30deg, #00a6ed 0%, #00b3ff 10%, #00ffff 100%);
+	/*background: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);*/
+	text-align: center;
+}
+
+.card .img-container {
+	background: transparent;
+	margin: 0 auto 2em auto;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 0.375em;
+}
+
+
+.card h2 {
+	color: #000;
+	font-size: 36pt;
+	margin-bottom: 3%;
+}
+
+	@media screen and (max-width: 1200px) {
+		.card h2 {
+			font-size: 30pt;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.card h2 {
+			font-size: 36pt;
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		.card h2 {
+			font-size: 32pt;
+		}
+	}
+
+
+.card h4 {
+	font-family: "nimbus-sans-bold";
+	font-weight: 200;
+	color: #000;
+	font-size: 18pt;
+	padding: 0;
+}
+
+.card ul {
+	font-family: "nimbus-sans-regular";
+	color: #000;
+	font-size: 18pt;
+	text-align: left;
+	padding: 0 15%;
+	margin-top: -2%;
+}
+
+.card p {
+	font-family: "nimbus-sans-light";
+	color: #000;
+	font-size: 16pt;
+	text-align: center;
+	padding: 0;
+	margin-top: -2%;
+}
+
+	@media screen and (min-width: 992px) {
+		.card ul {
+			margin-top: -7%;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		.card ul {
+			padding: 0 30%;
+		}
+	}
+
+	@media screen and (max-width: 860px) {
+		.card ul {
+			padding: 0 23%;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.card ul {
+			padding: 0 20%;
+		}
+	}
+
+	@media screen and (max-width: 680px) {
+		.card ul {
+			padding: 0 18%;
+		}
+	}
+
+.card li {
+	padding: 1% 0;
+}
 	
 /* Calendar */
 
