@@ -1,222 +1,145 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<!-- Google tag -->
+		<!-- Google Tag -->
+            <script async src = "https://www.googletagmanager.com/gtag/js?id=G-4N334XBHCH"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-4N334XBHCH');
+            </script>
+        <!-- End Google Tag -->
 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4N334XBHCH"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-4N334XBHCH');
-		</script>
-
-		<title>Salmon Arm Jiu-Jitsu</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>Salmon Arm Jiu-Jitsu | Home</title>
+		<meta charset = "utf-8" />
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable = yes" />
+		<link rel = "stylesheet" href = "assets/css/style.css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity = "sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin = "anonymous" referrerpolicy = "no-referrer" />
 	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<body>
+        <!-- Navbar & Menu -->
+            <header>
+                <nav class = "navbar">
+                    <a href = "index.html"><img class = "logo" src = "images/logo/logo.svg"></a>
+                    
+                    <ul class = "menu">
+                        <li class = "close"><a>&times;</a></li>
+                        <li><a href = "programs.html" class = "menu-link">Programs</a></li> 
+                        <li><a href = "schedule.html" class = "menu-link">Schedule</a></li>
+                        <li><a href = "trial.html" class = "menu-link">Trial</a></li>
+                        <li><a href = "about.html" class = "menu-link">About</a></li>
+                        <li><a href = "#footer" class = "menu-link">Contact</a></li>
+                    </ul>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!--<a href="index.html" class="logoPic"><img src = "images/logo/logoCircle.svg" width = "100%" height = "100%"></a>-->
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+                    <div class = "center-list"></div>
+                    <a class = "burger">&#9776;</a>
+                </nav>
+            </header>
 
-				
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="programs.html">Programs</a></li>
-							<li><a href="schedule.html">Schedule</a></li>
-							<li><a href="memberships.html">Memberships & Pricing</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="location.html">Location</a></li>
-							<li><a href="about.html">About Us</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#contact" class="button fit">Contact</a></li>
-							<li><a href="trial.html" class="button primary fit">Try Our Classes</a></li>
-						</ul>
-					</nav>
+        <!-- Main -->
+            <main>
+				<div class = "home">
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="majorAlt">
-								<h1><img src = "images/index/bannerHeader.svg" width = "58.5%" height = "40%"></h1>
-							</header>
-							<div class="content">
-								<p>No-Gi Brazilian Jiu-Jitsu & Wrestling</p>
-								<ul class="actions">
-									<li><a href="trial.html" class="button fit next scrolly blur">Try Our Classes</a></li>
-								</ul>
-							</div>
+					<div class = "heading">
+
+						<div class = "title">
+							<img srcset = "images/index/banner.svg 801w, images/index/bannerMobile.svg 800w"
+								 sizes = "(max-width: 800px) 800w, (max-width: 801px) 801w">
 						</div>
-					</section>
+	
+						<div class = "subtitle">
+							<p class = "text">No-Gi Jiu-Jitsu & Wrestling</p>
+							<a href = "trial.html"><button class = "style2">Try Our Classes</button></a>
+						</div>
+						
+					</div>
 
+				</div>
+            </main>
+
+
+
+        <!-- Footer -->    
+		<footer id = "footer">
+
+			<!-- Form -->
+				<form class = "form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+
+					<div class = "field-left">
+						<label for = "">name</label>
+						<input type = "text" id = "name">
+					</div>
 					
-				<!-- Main -->
-					<div id="main">
+					<div class = "field-right">
+						<label for = "">email</label>
+						<input type = "email" id = "email">
+					</div>
+					
+					<div class = "field">
+						<label for = "message">Message</label>
+						<textarea id = "message" rows = "6"></textarea>
+					</div>
+		
+					
+					<button onclick = "return contactForm()">Send</button>
+					<button type = "reset" value = "clear" class = "style1">Clear</button>
+					
+				</form>
+	
 
-						<!-- Tiles -->
-							<section id="tiles" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="programs.html" class="link">Programs</a></h3>
-										<p>Find a program</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="schedule.html" class="link">Schedule</a></h3>
-										<p>View class times & holiday closures</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="memberships.html" class="link">Memberships & Pricing</a></h3>
-										<p>Explore membership options</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="gallery.html" class="link">Gallery</a></h3>
-										<p>See what we do</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="location.html" class="link">Location</a></h3>
-										<p>Find our academy</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="#contact" class="link next scrolly">Contact Us</a></h3>
-										<p>Send us a message or follow us on social media</p>
-									</header>
-								</article>
-							</section>
-							
-							<!-- About Us -->
-							<section id="bigTile" class="bigTile">
-								<article>
-									<span class="image">
-										<img src="images/index/hover.svg">
-									</span>
-									<header class="major">
-										<h3><a href="about.html" class="link">About Us</a></h3>
-										<p>Our Story</p>
-									</header>
-								</article>
-							</section>
+			<!-- Contact Info -->
+				<div class = "contact-info">
+		
+					<div class = "icon-1">
+						<i class = "fa-solid fa-envelope"></i>
+					</div>
+		
+					<div class = "email">
+						<h4>Email</h4>
+						<p>info@salmonarmjiujitsu.ca</p>
+					</div>
+		
+		
+					<div class = "icon-2">
+						<i class = "fa-solid fa-phone"></i>
+					</div>
+		
+					<div class = "phone">
+						<h4>Phone</h4>
+						<p>(250).463.3131</p>
+					</div>
+		
+		
+					<div class = "icon-3">
+						<i class = "fa-solid fa-location-dot"></i>
+					</div>
+		
+					<div class = "address">
+						<h4><a href = "location.html">Address</a></h4>
+						<p>4850 10 Ave NE
+						<br />Salmon Arm, BC<br /></p>
+						<a href = "location.html" class = "style1"><i class = "style1 fa-solid fa-link"></i>Google Maps</a>
+					</div>
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required/>
-										</div>
-										<div class="field half">
-											<label for="email">Your Email</label>
-											<input type="text" name="email" id="email" required/>
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
+				</div>
 
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid style1 fa-envelope"></span>
-										<h3>Email</h3>
-										<span href="#">info@salmonarmjiujitsu.ca</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid style1 fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(250).463.3131</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid style1 fa-home"></span>
-										<h3>Location</h3>
-										<span>4850 10 Ave NE<br />
-										Salmon Arm, BC<br />
-										V1E 1C5</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+			<!-- Socials -->
+				<div class = "socials">
+					<a href = "https://www.instagram.com/salmonarmjiujitsu/"><i class = "fa-brands fa-instagram"></i></a>
+					<a href = "https://www.facebook.com/salmonarmjiujitsu/"><i class = "fa-brands fa-facebook-f"></i></a> 
+					<a href = "https://m.me/j/AbYsmbIeVWPdQu7S/"><i class = "fa-brands fa-facebook-messenger"></i></a> 
+					<p class = "style2">&copy; 2024 Salmon Arm Jiu-Jitsu</p>
+				</div>
+		</footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.instagram.com/salmonarmjiujitsu/" class="icon brands style1 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.facebook.com/salmonarmjiujitsu/" class="icon brands style1 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://twitter.com/salmonarmjj" class="icon brands style1 fa-twitter"><span class="label">Twitter</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; 2023 Salmon Arm Jiu-Jitsu</li>
-							</ul>
-						</div>
-					</footer>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+        <!-- Scripts -->
+            <script src = "assets/js/script.js"></script>  
+            
+    </body>
 </html>
+
+
